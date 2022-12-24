@@ -1,0 +1,1934 @@
+<!doctype html>
+<html>
+<head>
+<title>World Cup 2022 Goals</title>
+<meta name="description" content="Where do the World Cup 2022 goal scorers play?">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+
+<style>
+  html {
+    padding: 20px;
+    margin: 0;
+    color: #0d0d0d;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1 {
+    font-weight: 500;
+  }
+
+  h2 {
+    margin: 2em 0 0.5em;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  p {
+    font-weight: 200;
+  }
+
+  .text {
+    max-width: 800px;
+  }
+
+  #sankey_basic {
+    margin: 32px 0;
+    padding-top: 20px;
+  }
+
+  table {
+    margin: 0;
+    border: 1px solid #0d0d0d;
+    box-shadow: 2px 2px 0 0 #0d0d0d;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  th {
+    padding: 4px 8px;
+    text-align: left;
+    font-weight: 500;
+    background-color: #ebebeb;
+  }
+
+  td {
+    padding: 4px 8px;
+    font-weight: 200;
+    border-top: 1px solid #ebebeb;
+  }
+</style>
+</head>
+<body>
+
+  <h1>A report on where the goal scorers from the Mens World Cup 2022 play football</h1>
+  <p>By Adam Hughes</p>
+
+  <section class="text">
+    <p>I was interested in where the goal scorers for the World Cup play their regular football and couldn't find out the information easily. At the same time I was also looking for a project to improve some data skills so this felt like a good mini project to work on.</p>
+
+    <p>This report contains tables showing the leagues and teams who registered the most goals scored in the World Cup 2022. It also contains a Sankey diagram showing every goal scorer (excluding own goals), and which teams, countries, and leagues they play in. <i>The data has been collated from the official Fifa website, Google, and Wikipedia</i></p>
+
+    <p>Using the dataset and Sankey diagram you can analyse and make some interesting observations for instance: PSG by far has the most goals by their players (18 goals) and this is helped because they had the top two goal scorers, Mbappe (8 goals) and Messi (7 goals). PSG also registered 66% of the goals (18 goals) by players in the top French league (27 goals).</p>
+
+    <p>Another observation is that the Premier League is the league with the most goals (37 goals) by players within it and this is made up of 25 players representing a wide selection of teams (12 teams). There was an average of 1.52 goals scored by players in the premier league compared with 1.45 across the whole dataset</p>
+    
+  </section>
+
+  <section>
+    <h2>Top scorers</h2>
+    <table>
+      <thead>
+        <th>Player</th>
+        <th>Nation</th>
+        <th>Club</th>
+        <th>Goals</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kylian Mbappé</td>
+          <td>France</td>
+          <td>Paris Saint-Germain</td>
+          <td>8</td>
+        </tr>
+
+        <tr>
+          <td>Lionel Messi</td>
+          <td>Argentina</td>
+          <td>Paris Saint-Germain</td>
+          <td>7</td>
+        </tr>
+
+        <tr>
+          <td>Julián Álvarez</td>
+          <td>Argentina</td>
+          <td>Manchester City</td>
+          <td>4</td>
+        </tr>
+
+        <tr>
+          <td>Olivier Giroud</td>
+          <td>France</td>
+          <td>AC Milan</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Leagues with most goals by players</h2>
+    <table>
+      <thead>
+        <th>Club Country</th>
+        <th>League</th>
+        <th>Goals</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>England</td>
+          <td>Premier League</td>
+          <td>38</td>
+        </tr>
+
+        <tr>
+          <td>France</td>
+          <td>Ligue 1</td>
+          <td>27</td>
+        </tr>
+
+        <tr>
+          <td>Spain</td>
+          <td>La Liga</td>
+          <td>18</td>
+        </tr>
+
+        <tr>
+          <td>Germany</td>
+          <td>Bundesliga</td>
+          <td>15</td>
+        </tr>
+
+        <tr>
+          <td>Italy</td>
+          <td>Serie A</td>
+          <td>14</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Teams with most goals by players</h2>
+    <table>
+      <thead>
+        <th>League</th>
+        <th>Team</th>
+        <th>Goals</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ligue 1</td>
+          <td>Paris Saint-Germain</td>
+          <td>18</td>
+        </tr>
+
+        <tr>
+          <td>Premier League</td>
+          <td>Manchester City</td>
+          <td>8</td>
+        </tr>
+
+        <tr>
+          <td>La Liga</td>
+          <td>Barcelona</td>
+          <td>8</td>
+        </tr>
+
+        <tr>
+          <td>Serie A</td>
+          <td>AC Milan</td>
+          <td>7</td>
+        </tr>
+
+        <tr>
+          <td>Premier League</td>
+          <td>Chelsea</td>
+          <td>6</td>
+        </tr>
+
+        <tr>
+          <td>Premier League</td>
+          <td>Manchester United</td>
+          <td>6</td>
+        </tr>
+
+        <tr>
+          <td>Premier League</td>
+          <td>Tottenham Hotspur</td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="sankey_basic" style="width: 900px; height: 1900px;"></div>
+</body>
+
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['sankey']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Goals');
+    data.addRows(
+      [
+  [
+    "Team - France",
+    "Kylian Mbappé",
+    8
+  ],
+  [
+    "Team - Argentina",
+    "Lionel Messi",
+    7
+  ],
+  [
+    "Team - Argentina",
+    "Julián Álvarez",
+    4
+  ],
+  [
+    "Team - France",
+    "Olivier Giroud",
+    4
+  ],
+  [
+    "Team - Brazil",
+    "Richarlison",
+    3
+  ],
+  [
+    "Team - Ecuador",
+    "Enner Valencia",
+    3
+  ],
+  [
+    "Team - England",
+    "Marcus Rashford",
+    3
+  ],
+  [
+    "Team - England",
+    "Bukayo Saka",
+    3
+  ],
+  [
+    "Team - Netherlands",
+    "Cody Gakpo",
+    3
+  ],
+  [
+    "Team - Portugal",
+    "Gonçalo Ramos",
+    3
+  ],
+  [
+    "Team - Spain",
+    "Álvaro Morata",
+    3
+  ],
+  [
+    "Team - Brazil",
+    "Neymar",
+    2
+  ],
+  [
+    "Team - Cameroon",
+    "Vincent Aboubakar",
+    2
+  ],
+  [
+    "Team - Croatia",
+    "Andrej Kramarić",
+    2
+  ],
+  [
+    "Team - England",
+    "Harry Kane",
+    2
+  ],
+  [
+    "Team - Germany",
+    "Niclas Füllkrug",
+    2
+  ],
+  [
+    "Team - Germany",
+    "Kai Havertz",
+    2
+  ],
+  [
+    "Team - Ghana",
+    "Mohammed Kudus",
+    2
+  ],
+  [
+    "Team - Iran",
+    "Mehdi Taremi",
+    2
+  ],
+  [
+    "Team - Japan",
+    "Ritsu Doan",
+    2
+  ],
+  [
+    "Team - Korea Republic",
+    "Cho Gue-sung",
+    2
+  ],
+  [
+    "Team - Morocco",
+    "Youssef En-Nesyri",
+    2
+  ],
+  [
+    "Team - Netherlands",
+    "Wout Weghorst",
+    2
+  ],
+  [
+    "Team - Poland",
+    "Robert Lewandowski",
+    2
+  ],
+  [
+    "Team - Portugal",
+    "Bruno Fernandes",
+    2
+  ],
+  [
+    "Team - Portugal",
+    "Rafael Leão",
+    2
+  ],
+  [
+    "Team - Saudi Arabia",
+    "Salem Aldawsari",
+    2
+  ],
+  [
+    "Team - Serbia",
+    "Aleksandar Mitrović",
+    2
+  ],
+  [
+    "Team - Spain",
+    "Ferran Torres",
+    2
+  ],
+  [
+    "Team - Switzerland",
+    "Breel Embolo",
+    2
+  ],
+  [
+    "Team - Uruguay",
+    "Giorgian de Arrascaeta",
+    2
+  ],
+  [
+    "Team - Argentina",
+    "Ángel Di María",
+    1
+  ],
+  [
+    "Team - Argentina",
+    "Enzo Fernández",
+    1
+  ],
+  [
+    "Team - Argentina",
+    "Alexis Mac Allister",
+    1
+  ],
+  [
+    "Team - Argentina",
+    "Nahuel Molina",
+    1
+  ],
+  [
+    "Team - Australia",
+    "Mitchell Duke",
+    1
+  ],
+  [
+    "Team - Australia",
+    "Craig Goodwin",
+    1
+  ],
+  [
+    "Team - Australia",
+    "Mathew Leckie",
+    1
+  ],
+  [
+    "Team - Belgium",
+    "Michy Batshuayi",
+    1
+  ],
+  [
+    "Team - Brazil",
+    "Casemiro",
+    1
+  ],
+  [
+    "Team - Brazil",
+    "Lucas Paquetá",
+    1
+  ],
+  [
+    "Team - Brazil",
+    "Vini Jr.",
+    1
+  ],
+  [
+    "Team - Cameroon",
+    "Jean-Charles Castelletto",
+    1
+  ],
+  [
+    "Team - Cameroon",
+    "Eric Maxim Choupo-Moting",
+    1
+  ],
+  [
+    "Team - Canada",
+    "Alphonso Davies",
+    1
+  ],
+  [
+    "Team - Costa Rica",
+    "Juan Pablo Vargas",
+    1
+  ],
+  [
+    "Team - Costa Rica",
+    "Keysher Fuller",
+    1
+  ],
+  [
+    "Team - Costa Rica",
+    "Yeltsin Tejeda",
+    1
+  ],
+  [
+    "Team - Croatia",
+    "Joško Gvardiol",
+    1
+  ],
+  [
+    "Team - Croatia",
+    "Marko Livaja",
+    1
+  ],
+  [
+    "Team - Croatia",
+    "Lovro Majer",
+    1
+  ],
+  [
+    "Team - Croatia",
+    "Mislav Oršić",
+    1
+  ],
+  [
+    "Team - Croatia",
+    "Ivan Perišić",
+    1
+  ],
+  [
+    "Team - Croatia",
+    "Bruno Petković",
+    1
+  ],
+  [
+    "Team - Denmark",
+    "Andreas Christensen",
+    1
+  ],
+  [
+    "Team - Ecuador",
+    "Moisés Caicedo",
+    1
+  ],
+  [
+    "Team - England",
+    "Jude Bellingham",
+    1
+  ],
+  [
+    "Team - England",
+    "Phil Foden",
+    1
+  ],
+  [
+    "Team - England",
+    "Jack Grealish",
+    1
+  ],
+  [
+    "Team - England",
+    "Jordan Henderson",
+    1
+  ],
+  [
+    "Team - England",
+    "Raheem Sterling",
+    1
+  ],
+  [
+    "Team - France",
+    "Randal Kolo Muani",
+    1
+  ],
+  [
+    "Team - France",
+    "Adrien Rabiot",
+    1
+  ],
+  [
+    "Team - France",
+    "Aurélien Tchouaméni",
+    1
+  ],
+  [
+    "Team - France",
+    "Theo Hernández",
+    1
+  ],
+  [
+    "Team - Germany",
+    "Serge Gnabry",
+    1
+  ],
+  [
+    "Team - Germany",
+    "İlkay Gündoğan",
+    1
+  ],
+  [
+    "Team - Ghana",
+    "André Ayew",
+    1
+  ],
+  [
+    "Team - Ghana",
+    "Osman Bukari",
+    1
+  ],
+  [
+    "Team - Ghana",
+    "Mohammed Salisu",
+    1
+  ],
+  [
+    "Team - Iran",
+    "Rouzbeh Cheshmi",
+    1
+  ],
+  [
+    "Team - Iran",
+    "Ramin Rezaeian",
+    1
+  ],
+  [
+    "Team - Japan",
+    "Takuma Asano",
+    1
+  ],
+  [
+    "Team - Japan",
+    "Daizen Maeda",
+    1
+  ],
+  [
+    "Team - Japan",
+    "Ao Tanaka",
+    1
+  ],
+  [
+    "Team - Korea Republic",
+    "Hwang Hee-chan",
+    1
+  ],
+  [
+    "Team - Korea Republic",
+    "Paik Seung-ho",
+    1
+  ],
+  [
+    "Team - Korea Republic",
+    "Kim Young-gwon",
+    1
+  ],
+  [
+    "Team - Mexico",
+    "Henry Martín",
+    1
+  ],
+  [
+    "Team - Mexico",
+    "Luis Chávez",
+    1
+  ],
+  [
+    "Team - Morocco",
+    "Zakaria Aboukhlal",
+    1
+  ],
+  [
+    "Team - Morocco",
+    "Achraf Dari",
+    1
+  ],
+  [
+    "Team - Morocco",
+    "Romain Saïss",
+    1
+  ],
+  [
+    "Team - Morocco",
+    "Hakim Ziyech",
+    1
+  ],
+  [
+    "Team - Netherlands",
+    "Daley Blind",
+    1
+  ],
+  [
+    "Team - Netherlands",
+    "Denzel Dumfries",
+    1
+  ],
+  [
+    "Team - Netherlands",
+    "Frenkie de Jong",
+    1
+  ],
+  [
+    "Team - Netherlands",
+    "Davy Klaassen",
+    1
+  ],
+  [
+    "Team - Netherlands",
+    "Memphis Depay",
+    1
+  ],
+  [
+    "Team - Poland",
+    "Piotr Zieliński",
+    1
+  ],
+  [
+    "Team - Portugal",
+    "João Félix",
+    1
+  ],
+  [
+    "Team - Portugal",
+    "Pepe",
+    1
+  ],
+  [
+    "Team - Portugal",
+    "Ricardo Horta",
+    1
+  ],
+  [
+    "Team - Portugal",
+    "Raphaël Guerreiro",
+    1
+  ],
+  [
+    "Team - Portugal",
+    "Cristiano Ronaldo",
+    1
+  ],
+  [
+    "Team - Qatar",
+    "Mohammed Muntari",
+    1
+  ],
+  [
+    "Team - Saudi Arabia",
+    "Saleh Alshehri",
+    1
+  ],
+  [
+    "Team - Senegal",
+    "Boulaye Dia",
+    1
+  ],
+  [
+    "Team - Senegal",
+    "Bamba Dieng",
+    1
+  ],
+  [
+    "Team - Senegal",
+    "Famara Diedhiou",
+    1
+  ],
+  [
+    "Team - Senegal",
+    "Ismaïla Sarr",
+    1
+  ],
+  [
+    "Team - Senegal",
+    "Kalidou Koulibaly",
+    1
+  ],
+  [
+    "Team - Serbia",
+    "Strahinja Pavlović",
+    1
+  ],
+  [
+    "Team - Serbia",
+    "Sergej Milinković-Savić",
+    1
+  ],
+  [
+    "Team - Serbia",
+    "Dušan Vlahović",
+    1
+  ],
+  [
+    "Team - Spain",
+    "Carlos Soler",
+    1
+  ],
+  [
+    "Team - Spain",
+    "Dani Olmo",
+    1
+  ],
+  [
+    "Team - Spain",
+    "Gavi",
+    1
+  ],
+  [
+    "Team - Spain",
+    "Marco Asensio",
+    1
+  ],
+  [
+    "Team - Switzerland",
+    "Remo Freuler",
+    1
+  ],
+  [
+    "Team - Switzerland",
+    "Xherdan Shaqiri",
+    1
+  ],
+  [
+    "Team - Switzerland",
+    "Manuel Akanji",
+    1
+  ],
+  [
+    "Team - Tunisia",
+    "Wahbi Khazri",
+    1
+  ],
+  [
+    "Team - USA",
+    "Christian Pulisic",
+    1
+  ],
+  [
+    "Team - USA",
+    "Timothy Weah",
+    1
+  ],
+  [
+    "Team - USA",
+    "Haji Wright",
+    1
+  ],
+  [
+    "Team - Wales",
+    "Gareth Bale",
+    1
+  ],
+  [
+    "Ángel Di María",
+    "Italy",
+    1
+  ],
+  [
+    "Enzo Fernández",
+    "Portugal",
+    1
+  ],
+  [
+    "Julián Álvarez",
+    "England",
+    4
+  ],
+  [
+    "Alexis Mac Allister",
+    "England",
+    1
+  ],
+  [
+    "Lionel Messi",
+    "France",
+    7
+  ],
+  [
+    "Nahuel Molina",
+    "Spain",
+    1
+  ],
+  [
+    "Mitchell Duke",
+    "Japan",
+    1
+  ],
+  [
+    "Craig Goodwin",
+    "Australia",
+    1
+  ],
+  [
+    "Mathew Leckie",
+    "Australia",
+    1
+  ],
+  [
+    "Michy Batshuayi",
+    "Turkey",
+    1
+  ],
+  [
+    "Casemiro",
+    "England",
+    1
+  ],
+  [
+    "Lucas Paquetá",
+    "England",
+    1
+  ],
+  [
+    "Neymar",
+    "France",
+    2
+  ],
+  [
+    "Richarlison",
+    "England",
+    3
+  ],
+  [
+    "Vini Jr.",
+    "Spain",
+    1
+  ],
+  [
+    "Vincent Aboubakar",
+    "Saudi Arabia",
+    2
+  ],
+  [
+    "Jean-Charles Castelletto",
+    "France",
+    1
+  ],
+  [
+    "Eric Maxim Choupo-Moting",
+    "Germany",
+    1
+  ],
+  [
+    "Alphonso Davies",
+    "Germany",
+    1
+  ],
+  [
+    "Juan Pablo Vargas",
+    "Colombia",
+    1
+  ],
+  [
+    "Keysher Fuller",
+    "Costa Rica",
+    1
+  ],
+  [
+    "Yeltsin Tejeda",
+    "Costa Rica",
+    1
+  ],
+  [
+    "Joško Gvardiol",
+    "Germany",
+    1
+  ],
+  [
+    "Andrej Kramarić",
+    "Germany",
+    2
+  ],
+  [
+    "Marko Livaja",
+    "Croatia",
+    1
+  ],
+  [
+    "Lovro Majer",
+    "France",
+    1
+  ],
+  [
+    "Mislav Oršić",
+    "Croatia",
+    1
+  ],
+  [
+    "Ivan Perišić",
+    "England",
+    1
+  ],
+  [
+    "Bruno Petković",
+    "Croatia",
+    1
+  ],
+  [
+    "Andreas Christensen",
+    "Spain",
+    1
+  ],
+  [
+    "Enner Valencia",
+    "Turkey",
+    3
+  ],
+  [
+    "Moisés Caicedo",
+    "England",
+    1
+  ],
+  [
+    "Jude Bellingham",
+    "Germany",
+    1
+  ],
+  [
+    "Phil Foden",
+    "England",
+    1
+  ],
+  [
+    "Jack Grealish",
+    "England",
+    1
+  ],
+  [
+    "Jordan Henderson",
+    "England",
+    1
+  ],
+  [
+    "Harry Kane",
+    "England",
+    2
+  ],
+  [
+    "Marcus Rashford",
+    "England",
+    3
+  ],
+  [
+    "Bukayo Saka",
+    "England",
+    3
+  ],
+  [
+    "Raheem Sterling",
+    "England",
+    1
+  ],
+  [
+    "Olivier Giroud",
+    "Italy",
+    4
+  ],
+  [
+    "Randal Kolo Muani",
+    "Germany",
+    1
+  ],
+  [
+    "Kylian Mbappé",
+    "France",
+    8
+  ],
+  [
+    "Adrien Rabiot",
+    "Italy",
+    1
+  ],
+  [
+    "Aurélien Tchouaméni",
+    "Spain",
+    1
+  ],
+  [
+    "Theo Hernández",
+    "Italy",
+    1
+  ],
+  [
+    "Niclas Füllkrug",
+    "Germany",
+    2
+  ],
+  [
+    "Serge Gnabry",
+    "Germany",
+    1
+  ],
+  [
+    "İlkay Gündoğan",
+    "England",
+    1
+  ],
+  [
+    "Kai Havertz",
+    "England",
+    2
+  ],
+  [
+    "André Ayew",
+    "Qatar",
+    1
+  ],
+  [
+    "Osman Bukari",
+    "Serbia",
+    1
+  ],
+  [
+    "Mohammed Kudus",
+    "Netherlands",
+    2
+  ],
+  [
+    "Mohammed Salisu",
+    "England",
+    1
+  ],
+  [
+    "Mehdi Taremi",
+    "Portugal",
+    2
+  ],
+  [
+    "Rouzbeh Cheshmi",
+    "Iran",
+    1
+  ],
+  [
+    "Ramin Rezaeian",
+    "Iran",
+    1
+  ],
+  [
+    "Takuma Asano",
+    "Germany",
+    1
+  ],
+  [
+    "Ritsu Doan",
+    "Germany",
+    2
+  ],
+  [
+    "Daizen Maeda",
+    "Scotland",
+    1
+  ],
+  [
+    "Ao Tanaka",
+    "Germany",
+    1
+  ],
+  [
+    "Cho Gue-sung",
+    "South Korea",
+    2
+  ],
+  [
+    "Hwang Hee-chan",
+    "England",
+    1
+  ],
+  [
+    "Paik Seung-ho",
+    "South Korea",
+    1
+  ],
+  [
+    "Kim Young-gwon",
+    "South Korea",
+    1
+  ],
+  [
+    "Henry Martín",
+    "Mexico",
+    1
+  ],
+  [
+    "Luis Chávez",
+    "Mexico",
+    1
+  ],
+  [
+    "Zakaria Aboukhlal",
+    "France",
+    1
+  ],
+  [
+    "Achraf Dari",
+    "France",
+    1
+  ],
+  [
+    "Youssef En-Nesyri",
+    "Spain",
+    2
+  ],
+  [
+    "Romain Saïss",
+    "Turkey",
+    1
+  ],
+  [
+    "Hakim Ziyech",
+    "England",
+    1
+  ],
+  [
+    "Daley Blind",
+    "Netherlands",
+    1
+  ],
+  [
+    "Denzel Dumfries",
+    "Italy",
+    1
+  ],
+  [
+    "Frenkie de Jong",
+    "Spain",
+    1
+  ],
+  [
+    "Cody Gakpo",
+    "Netherlands",
+    3
+  ],
+  [
+    "Davy Klaassen",
+    "Netherlands",
+    1
+  ],
+  [
+    "Memphis Depay",
+    "Spain",
+    1
+  ],
+  [
+    "Wout Weghorst",
+    "Turkey",
+    2
+  ],
+  [
+    "Robert Lewandowski",
+    "Spain",
+    2
+  ],
+  [
+    "Piotr Zieliński",
+    "Italy",
+    1
+  ],
+  [
+    "Bruno Fernandes",
+    "England",
+    2
+  ],
+  [
+    "Gonçalo Ramos",
+    "Portugal",
+    3
+  ],
+  [
+    "João Félix",
+    "Spain",
+    1
+  ],
+  [
+    "Pepe",
+    "Portugal",
+    1
+  ],
+  [
+    "Ricardo Horta",
+    "Portugal",
+    1
+  ],
+  [
+    "Rafael Leão",
+    "Italy",
+    2
+  ],
+  [
+    "Raphaël Guerreiro",
+    "Germany",
+    1
+  ],
+  [
+    "Cristiano Ronaldo",
+    "Free Agent",
+    1
+  ],
+  [
+    "Mohammed Muntari",
+    "Qatar",
+    1
+  ],
+  [
+    "Saleh Alshehri",
+    "Saudi Arabia",
+    1
+  ],
+  [
+    "Salem Aldawsari",
+    "Saudi Arabia",
+    2
+  ],
+  [
+    "Boulaye Dia",
+    "Italy",
+    1
+  ],
+  [
+    "Bamba Dieng",
+    "France",
+    1
+  ],
+  [
+    "Famara Diedhiou",
+    "Turkey",
+    1
+  ],
+  [
+    "Ismaïla Sarr",
+    "England",
+    1
+  ],
+  [
+    "Kalidou Koulibaly",
+    "England",
+    1
+  ],
+  [
+    "Aleksandar Mitrović",
+    "England",
+    2
+  ],
+  [
+    "Strahinja Pavlović",
+    "Austria",
+    1
+  ],
+  [
+    "Sergej Milinković-Savić",
+    "Italy",
+    1
+  ],
+  [
+    "Dušan Vlahović",
+    "Italy",
+    1
+  ],
+  [
+    "Carlos Soler",
+    "France",
+    1
+  ],
+  [
+    "Dani Olmo",
+    "Germany",
+    1
+  ],
+  [
+    "Ferran Torres",
+    "Spain",
+    2
+  ],
+  [
+    "Gavi",
+    "Spain",
+    1
+  ],
+  [
+    "Marco Asensio",
+    "Spain",
+    1
+  ],
+  [
+    "Álvaro Morata",
+    "Spain",
+    3
+  ],
+  [
+    "Breel Embolo",
+    "France",
+    2
+  ],
+  [
+    "Remo Freuler",
+    "England",
+    1
+  ],
+  [
+    "Xherdan Shaqiri",
+    "USA",
+    1
+  ],
+  [
+    "Manuel Akanji",
+    "England",
+    1
+  ],
+  [
+    "Wahbi Khazri",
+    "France",
+    1
+  ],
+  [
+    "Giorgian de Arrascaeta",
+    "Brazil",
+    2
+  ],
+  [
+    "Christian Pulisic",
+    "USA",
+    1
+  ],
+  [
+    "Timothy Weah",
+    "France",
+    1
+  ],
+  [
+    "Haji Wright",
+    "Turkey",
+    1
+  ],
+  [
+    "Gareth Bale",
+    "USA",
+    1
+  ],
+  [
+    "England",
+    "Premier League",
+    38
+  ],
+  [
+    "France",
+    "Ligue 1",
+    27
+  ],
+  [
+    "Spain",
+    "La Liga",
+    18
+  ],
+  [
+    "Germany",
+    "Bundesliga",
+    15
+  ],
+  [
+    "Italy",
+    "Serie A",
+    14
+  ],
+  [
+    "Turkey",
+    "Süper Lig",
+    9
+  ],
+  [
+    "Portugal",
+    "Primeira Liga",
+    8
+  ],
+  [
+    "Netherlands",
+    "Eredivisie",
+    7
+  ],
+  [
+    "Saudi Arabia",
+    "Saudi Professional League",
+    5
+  ],
+  [
+    "Croatia",
+    "SuperSport HNL",
+    3
+  ],
+  [
+    "South Korea",
+    "K League 1",
+    3
+  ],
+  [
+    "Qatar",
+    "Qatar Stars League",
+    2
+  ],
+  [
+    "Iran",
+    "Persian Gulf Pro League",
+    2
+  ],
+  [
+    "USA",
+    "Major League Soccer",
+    2
+  ],
+  [
+    "Costa Rica",
+    "Liga Promerica",
+    2
+  ],
+  [
+    "Mexico",
+    "Liga MX",
+    2
+  ],
+  [
+    "Brazil",
+    "Brasileirão",
+    2
+  ],
+  [
+    "Australia",
+    "A-League",
+    2
+  ],
+  [
+    "Serbia",
+    "Serbian SuperLiga",
+    1
+  ],
+  [
+    "Scotland",
+    "Scottish Premiership",
+    1
+  ],
+  [
+    "South Korea",
+    "K League 2",
+    1
+  ],
+  [
+    "Japan",
+    "J2 League",
+    1
+  ],
+  [
+    "England",
+    "EFL Championship",
+    1
+  ],
+  [
+    "Colombia",
+    "Categoría Primera A",
+    1
+  ],
+  [
+    "Austria",
+    "Austrian Bundesliga",
+    1
+  ],
+  [
+    "Germany",
+    "2. Bundesliga",
+    1
+  ],
+  [
+    "Ligue 1",
+    "Paris Saint-Germain",
+    18
+  ],
+  [
+    "Premier League",
+    "Manchester City",
+    8
+  ],
+  [
+    "La Liga",
+    "Barcelona",
+    8
+  ],
+  [
+    "Serie A",
+    "AC Milan",
+    7
+  ],
+  [
+    "Premier League",
+    "Tottenham Hotspur",
+    6
+  ],
+  [
+    "Premier League",
+    "Manchester United",
+    6
+  ],
+  [
+    "Premier League",
+    "Chelsea",
+    6
+  ],
+  [
+    "La Liga",
+    "Atlético Madrid",
+    5
+  ],
+  [
+    "Süper Lig",
+    "Fenerbahçe",
+    4
+  ],
+  [
+    "Primeira Liga",
+    "Benfica",
+    4
+  ],
+  [
+    "Eredivisie",
+    "Ajax",
+    4
+  ],
+  [
+    "La Liga",
+    "Real Madrid",
+    3
+  ],
+  [
+    "Primeira Liga",
+    "Porto",
+    3
+  ],
+  [
+    "Eredivisie",
+    "PSV",
+    3
+  ],
+  [
+    "Serie A",
+    "Juventus",
+    3
+  ],
+  [
+    "K League 1",
+    "Jeonbuk Hyundai Motors",
+    3
+  ],
+  [
+    "Süper Lig",
+    "Beşiktaş",
+    3
+  ],
+  [
+    "Bundesliga",
+    "Bayern Munich",
+    3
+  ],
+  [
+    "Premier League",
+    "Arsenal",
+    3
+  ],
+  [
+    "Saudi Professional League",
+    "Al-Hilal",
+    3
+  ],
+  [
+    "Bundesliga",
+    "Werder Bremen",
+    2
+  ],
+  [
+    "La Liga",
+    "Sevilla",
+    2
+  ],
+  [
+    "Bundesliga",
+    "SC Freiburg",
+    2
+  ],
+  [
+    "Bundesliga",
+    "RB Leipzig",
+    2
+  ],
+  [
+    "Ligue 1",
+    "Monaco",
+    2
+  ],
+  [
+    "Liga Promerica",
+    "Herediano",
+    2
+  ],
+  [
+    "Premier League",
+    "Fulham",
+    2
+  ],
+  [
+    "Brasileirão",
+    "Flamengo",
+    2
+  ],
+  [
+    "SuperSport HNL",
+    "Dinamo Zagreb",
+    2
+  ],
+  [
+    "Premier League",
+    "Brighton & Hove Albion",
+    2
+  ],
+  [
+    "Bundesliga",
+    "Borussia Dortmund",
+    2
+  ],
+  [
+    "Saudi Professional League",
+    "Al Nassr",
+    2
+  ],
+  [
+    "Bundesliga",
+    "1899 Hoffenheim",
+    2
+  ],
+  [
+    "Premier League",
+    "Wolverhampton Wanderers F.C.",
+    1
+  ],
+  [
+    "Premier League",
+    "West Ham United",
+    1
+  ],
+  [
+    "EFL Championship",
+    "Watford",
+    1
+  ],
+  [
+    "Bundesliga",
+    "VfL Bochum",
+    1
+  ],
+  [
+    "K League 2",
+    "Ulsan Hyundai",
+    1
+  ],
+  [
+    "Ligue 1",
+    "Toulouse",
+    1
+  ],
+  [
+    "Premier League",
+    "Southampton",
+    1
+  ],
+  [
+    "Persian Gulf Pro League",
+    "Sepahan",
+    1
+  ],
+  [
+    "Serie A",
+    "Salernitana",
+    1
+  ],
+  [
+    "Ligue 1",
+    "Rennes",
+    1
+  ],
+  [
+    "Serbian SuperLiga",
+    "Red Star Belgrade",
+    1
+  ],
+  [
+    "Austrian Bundesliga",
+    "Red Bull Salzburg",
+    1
+  ],
+  [
+    "Liga MX",
+    "Pachuca",
+    1
+  ],
+  [
+    "Premier League",
+    "Nottingham Forest",
+    1
+  ],
+  [
+    "Serie A",
+    "Napoli",
+    1
+  ],
+  [
+    "Ligue 1",
+    "Nantes",
+    1
+  ],
+  [
+    "Ligue 1",
+    "Montpellier",
+    1
+  ],
+  [
+    "Categoría Primera A",
+    "Millonarios",
+    1
+  ],
+  [
+    "A-League",
+    "Melbourne City FC",
+    1
+  ],
+  [
+    "Ligue 1",
+    "Marseille",
+    1
+  ],
+  [
+    "Major League Soccer",
+    "Los Angeles FC",
+    1
+  ],
+  [
+    "Premier League",
+    "Liverpool",
+    1
+  ],
+  [
+    "Ligue 1",
+    "Lille",
+    1
+  ],
+  [
+    "Serie A",
+    "Lazio",
+    1
+  ],
+  [
+    "Serie A",
+    "Inter Milan",
+    1
+  ],
+  [
+    "SuperSport HNL",
+    "Hajduk Split",
+    1
+  ],
+  [
+    "2. Bundesliga",
+    "Fortuna Düsseldorf",
+    1
+  ],
+  [
+    "J2 League",
+    "Fagiano Okayama",
+    1
+  ],
+  [
+    "Persian Gulf Pro League",
+    "Esteghlal",
+    1
+  ],
+  [
+    "Bundesliga",
+    "Eintracht Frankfurt",
+    1
+  ],
+  [
+    "Liga MX",
+    "Club América",
+    1
+  ],
+  [
+    "Major League Soccer",
+    "Chicago Fire",
+    1
+  ],
+  [
+    "Scottish Premiership",
+    "Celtic",
+    1
+  ],
+  [
+    "Ligue 1",
+    "Brest",
+    1
+  ],
+  [
+    "Primeira Liga",
+    "Braga",
+    1
+  ],
+  [
+    "Süper Lig",
+    "Antalyaspor",
+    1
+  ],
+  [
+    "Süper Lig",
+    "Alanyaspor",
+    1
+  ],
+  [
+    "Qatar Stars League",
+    "Al-Duhail",
+    1
+  ],
+  [
+    "Qatar Stars League",
+    "Al Sadd",
+    1
+  ],
+  [
+    "A-League",
+    "Adelaide United",
+    1
+  ]
+]
+);
+
+var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+                  '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+
+// Sets chart options.
+var options = {
+  width: 600,
+  tooltip: {
+    textStyle: {
+      color: '#000',
+      fontName: '',
+      fontSize: 14,
+      bold: false,
+    }
+  },
+  sankey: {
+    link: {
+      colorMode: 'source',
+      color: {
+        fill: '#d799ae',
+        stroke: '#ebebeb',
+        strokeWidth: 1
+      }
+    },
+    node: {
+      width: 20,
+      label: {
+        color: '#871b47'
+      },
+      labelPadding: 6,
+      nodePadding: 10
+    },
+  }
+};
+
+// Instantiates and draws our chart, passing in some options.
+var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
+chart.draw(data, options);
+}
+</script>
+</html>
